@@ -11,6 +11,7 @@
 
     <style>
     @import url('https://fonts.googleapis.com/css?family=Cinzel|Shadows+Into+Light|Source+Serif+Pro:400,600,700');
+
     body{
       padding-top: 92px;
       background-color: #264a84
@@ -34,7 +35,12 @@
     <!-->navigation bar</h1></!-->
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
       <img src="images/boys town logo.png" alt="Boystown" width="110" height="100">
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav1">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
@@ -49,14 +55,15 @@
               <a class="nav-link" href="applications.html">Applications</a>
             </li>
           </ul>
+        </div>
     </nav>
 
       <!-- Main header-->
       <section>
-        <div class="container-fluid" style="background-color: #0f005b; color: #1598af">
+        <div class="container" style="background-color: #0f005b; color: #1598af">
           <div class="row justify-content-md-center p-5">
             <div class="col-6">
-                <h1 class="display-1" style="font-family: 'Cinzel', serif">
+                <h1 class="display-3" style="font-family: 'Cinzel', serif">
                   Technology Core
                 </h1>
                 <p>
@@ -79,9 +86,9 @@
 
       <!-- Highlights -->
       <section>
-        <div class="container-fluid"  style="background-image: URL('images/BlueLines.jpg')">
+        <div class="container"  style="background-image: URL('images/BlueLines.jpg')">
           <div class="row p-3">
-            <div class="col-6 examples">
+            <div class="col-lg-6 col-xs-12 examples">
               <div class="jumbotron">
                 <h1 class="display-4">Highlighted Projects</h1>
                 <hr class="my-5">
@@ -89,7 +96,7 @@
                 <a class="btn btn-outline-warning btn-lg" href="#" role="button">Learn more</a>
               </div>
             </div>
-            <div class="col-6 examples p-5">
+            <div class="col-lg-6 col-xs-12 examples p-5">
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -136,9 +143,9 @@
           <div class="row justify-content-center p-5" style="text-transform:uppercase; color: #f29a0a">
             <h1>personell</h1>
           </div>
-          <div class="row">
-            <div class="col-4">
-              <div class="card border-0" style="width: 18rem">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-5">
+              <div class="card border-0" style="width: 15rem">
                 <img class="card-img-top" src="images/TimothyV.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Timothy Vallier</h5>
@@ -151,8 +158,8 @@
               </div>
             </div>
 
-            <div class="col-4">
-              <div class="card border-0" style="width: 18rem;">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-5">
+              <div class="card border-0" style="width: 15rem;">
                 <img class="card-img-top" src="images/MonitaC.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Monita Chatterjee</h5>
@@ -165,8 +172,8 @@
               </div>
             </div>
 
-            <div class="col-4">
-              <div class="card border-0" style="width: 18rem;">
+            <div class="col-lg-4 col-sm-6 col-xs-12 mt-5">
+              <div class="card border-0" style="width: 15rem;">
                 <img class="card-img-top" src="images/DanielR.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Daniel Rasetshwane</h5>
