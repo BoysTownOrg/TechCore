@@ -20,6 +20,47 @@
     .jumbotron{
       background-color: #d6e5ff !important;
     }
+    .sidenav{
+      position: fixed;
+      height: 100%;
+      width: 27%;
+      background-color: #2e3338;
+    }
+
+    .sidenav .active{
+      background-color: #004c76;
+      border-color: #004c76;
+      border: none;
+    }
+
+    .sidenav .list-group-item:hover{
+      background-color: grey;
+      color: white;
+    }
+
+    @media screen and (max-width: 576px) {
+    .sidenav {
+      height: 60px;
+      width: 100%;
+      padding: 0px;
+      margin:auto;
+      z-index: 1;
+    }
+
+    .sidenav a{
+      display:inline-grid;
+      width: 20%;
+      height: 60px;
+      padding: 8px;
+      font-size: 12px;
+      text-align: center;
+      float: left;
+    }
+
+    .content{
+      padding-top: 58px;
+    }
+}
     </style>
 
     <title>AV Lab</title>
@@ -54,19 +95,19 @@
 
     <div class="contatiner-fluid">
       <div class="row">
-        <div class="col-3 ">
-          <div class="list-group-flush">
+        <div class="col-12 col-sm-3">
+          <div class="list-group-flush sidenav">
             <a href="#" class="list-group-item list-group-item-action active">
               Full Inventory
             </a>
-            <a href="#" class="list-group-item list-group-item-action">Loan Request</a>
-            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-            <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+            <a href="#" class="list-group-item list-group-item-dark">Loan Request</a>
+            <a href="#" class="list-group-item list-group-item-dark">Morbi leo risus</a>
+            <a href="#" class="list-group-item list-group-item-dark">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item list-group-item-dark">Vestibulum at eros</a>
           </div>
         </div>
-        <div class="col-9">
-          <iframe class="embed-responsive" src="https://docs.google.com/forms/d/e/1FAIpQLScT3PrjU7f-uVng4HOyy0J0UE9j4eeExu-r2LPZrw7vFzwo-w/viewform?embedded=true" width="800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div class="col-12 col-sm-9">
+          <iframe class="embed-responsive content" src="https://docs.google.com/forms/d/e/1FAIpQLScT3PrjU7f-uVng4HOyy0J0UE9j4eeExu-r2LPZrw7vFzwo-w/viewform?embedded=true" width="800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
       </div>
     </div>
