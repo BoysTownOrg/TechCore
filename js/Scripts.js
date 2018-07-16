@@ -1,15 +1,11 @@
-//fill inventory page
-var client_id = "104991348418-70npk7nf3kkbgbsrsmrt4apesoeije5j.apps.googleusercontent.com";
-var api_key = "AIzaSyAYeUbOHiIh9P2xYjRZyM-mztRgynfGLFI";
+$(function(){
+console.log("hi");
+  $.getJSON("https://script.googleusercontent.com/macros/echo?user_content_key=cQeNL_sxSGc3TLMiO8TwyKY9eTuNOhPccPvZnnRjTIk27dCllA4PEu5f-trcLHNjBx5XVIejVVfn_hOaeooYfjmnYr-4sS1Am5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnNuT4VuMR1XyNSR4UCpILev2jBSmriMlWvFJwQvbBWKgCF_FbWgoeheklgKJBC-vysG0qewgMQGJ&lib=MFshQPy37C18ZD8LDzatERLLRIzCuRgtx", printData);
 
+    function printData(data){
 
+    for(i=0;i<data.data.length;i++)
+        console.log("hi");
+  }
 
-window.onclick = show();
-function show(){
-
-
-
-
-  
-  console.log("what's up dudes I like to eat chicken every day");
-}
+});
