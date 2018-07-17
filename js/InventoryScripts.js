@@ -1,11 +1,14 @@
 $(function()
 {
 
-  var items = document.getElementById("items");
+  var audio = document.getElementById("audio");
+  var cables = document.getElementById("cables");
+  var tools = document.getElementById("tools");
+  var video = document.getElementById("video");
 
-  $.getJSON("https://script.googleusercontent.com/macros/echo?user_content_key=cQeNL_sxSGc3TLMiO8TwyKY9eTuNOhPccPvZnnRjTIk27dCllA4PEu5f-trcLHNjBx5XVIejVVfn_hOaeooYfjmnYr-4sS1Am5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnNuT4VuMR1XyNSR4UCpILev2jBSmriMlWvFJwQvbBWKgCF_FbWgoeheklgKJBC-vysG0qewgMQGJ&lib=MFshQPy37C18ZD8LDzatERLLRIzCuRgtx", printData);
+  $.getJSON("https://script.googleusercontent.com/macros/echo?user_content_key=GhjYHCs17Uy6BT75s_sSxuwhfKUi2W_bwGxrfo5jX6AurU2WollQe9jbOMvicQDvBO5Y7zXLAV-qs2RpQXmS820Yb1RFmSdim5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnNuT4VuMR1XyNSR4UCpILev2jBSmriMlWvFJwQvbBWKgCF_FbWgoeheklgKJBC-vysG0qewgMQGJ&lib=MFshQPy37C18ZD8LDzatERLLRIzCuRgtx", fillInventory);
 
-  function printData(data)
+  function fillInventory(data)
   {
     for(i=0;i<data.data.length;i++)
     {
@@ -14,8 +17,12 @@ $(function()
       var title = document.createElement("div");
       var body = document.createElement("div");
 
-      col.className = "col-6 col-md-4 col-lg-2 py-3";
-      card.className = "card";
+      if(data.data[i].status == "Available")
+        card.className = "card available";
+      else
+        card.className = "card unavailable";
+
+      col.className = "col-6 col-sm-4 col-lg-6 py-3";
       title.className = "card-title";
       body.className = "card-body";
 
@@ -27,7 +34,23 @@ $(function()
 
       col.appendChild(card);
 
-      items.appendChild(col);
+      switch(data.data[i].category)
+      {
+        case "Audio":
+              audio.appendChild(col);
+              break;
+        case "Cables":
+              cables.appendChild(col);
+              break;
+        case "Tools":
+              tools.appendChild(col);
+              break;
+        case "Video":
+              video.appendChild(col);
+              break;
+        default:
+      }
+
     }
   }
 

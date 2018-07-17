@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Shadows+Into+Light|Source+Serif+Pro:400,600,700');
+
+body{
+  padding-top: 92px;
+  background-color: #264a84
+}
+
+.jumbotron{
+  background-color:  #f29a0a !important;
+}
+
+.card{
+  background-color: #f29a0a
+}
+.examples{
+  padding-top: 5rem;
+}
