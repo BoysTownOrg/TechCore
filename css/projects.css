@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Shadows+Into+Light|Source+Serif+Pro:400,600,700');
+
+body{
+  padding-top: 92px;
+  background-color: #264a84
+}
+
+.jumbotron{
+  background-color: #d6e5ff !important;
+}
+.sidenav{
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  background-color: #2e3338;
+}
+
+.sidenav .active{
+  background-color: #004c76;
+  border-color: #004c76;
+  border: none;
+}
+
+.sidenav .list-group-item:hover{
+  background-color: grey;
+  color: white;
+}
+
+.available{
+  background-color: #a0ff9c
+}
+
+.unavailable{
+  background-color: #ff5e5e
+}
+
+@media screen and (max-width: 576px) {
+.sidenav {
+  height: 119px;
+  width: 100%;
+  padding: 0px;
+  margin:auto;
+  z-index: 1;
+}
+
+.sidenav a{
+  display:inline-grid;
+  width: 33.33333333%;
+  height: 60px;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+}
+
+.content{
+  padding-top: 119px;
+}
+}
