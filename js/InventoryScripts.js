@@ -17,10 +17,13 @@ $(function()
       var title = document.createElement("div");
       var body = document.createElement("div");
 
-      if(data.data[i].status == "Available")
-        card.className = "card available";
+      if(data.data[i].category == "Tools")
+        card.className = "tools";
       else
-        card.className = "card unavailable";
+        if(data.data[i].status == "Available")
+          card.className = "card available";
+        else
+          card.className = "card unavailable";
 
       col.className = "col-6 col-sm-4 col-lg-6 py-3";
       title.className = "card-title";
@@ -55,3 +58,7 @@ $(function()
   }
 
 });
+
+//Client ID: 479202160670-oud6g0fvo7nj1ssttrdgdqelftql226u.apps.googleusercontent.com
+//Client Secret: Wfo3YuU-xrVF9JCG80wQj46w
+//API key: AIzaSyCEkU2SKUepA6JJfsfDDRXKsorhLoc_BGc

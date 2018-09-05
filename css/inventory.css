@@ -34,9 +34,13 @@ body{
   background-color: #ff5e5e
 }
 
+.tools{
+  background-color: grey
+}
+
 @media screen and (max-width: 576px) {
 .sidenav {
-  height: 60px;
+  height: 119px;
   width: 100%;
   padding: 0px;
   margin:auto;
@@ -54,6 +58,6 @@ body{
 }
 
 .content{
-  padding-top: 58px;
+  padding-top: 119px;
 }
 }
